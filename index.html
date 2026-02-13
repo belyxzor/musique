@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Secret Song</title>
+<title>Secret</title>
 
 <style>
 body {
     margin: 0;
-    background-color: black;
+    background: black;
     color: white;
     font-family: Arial, sans-serif;
     display: flex;
@@ -19,18 +19,18 @@ body {
 }
 
 button {
-    background-color: white;
+    background: white;
     color: black;
     border: none;
     padding: 20px 40px;
-    font-size: 20px;
+    font-size: 22px;
+    border-radius: 12px;
     cursor: pointer;
-    border-radius: 10px;
     transition: 0.3s;
 }
 
 button:hover {
-    background-color: gray;
+    background: gray;
 }
 
 p {
@@ -43,13 +43,17 @@ p {
 
 <body>
 
-<button onclick="document.getElementById('music').play()">▶ Play</button>
+<button id="playBtn">▶ Play</button>
 
 <p>gg ta trouver une chanson que jais pas sortie</p>
 
-<audio id="music">
-    <source src="https://foldr.space/f/4s34CkXgOO3jZ9be" type="audio/mpeg">
-</audio>
+<audio id="music" src="musique.mp3"></audio>
+
+<script>
+document.getElementById("playBtn").addEventListener("click", function() {
+    document.getElementById("music").play();
+});
+</script>
 
 </body>
 </html>
