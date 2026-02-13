@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secret Song</title>
+
+<style>
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px 40px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<button onclick="document.getElementById('music').play()">▶ Play</button>
+
+<p>gg ta trouver une chanson que jais pas sortie</p>
+
+<audio id="music">
+    <source src="https://foldr.space/f/4s34CkXgOO3jZ9be" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
